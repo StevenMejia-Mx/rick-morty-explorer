@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rick and Morty Explorer</h1>
+        <p>Busca personajes usando la API de Rick and Morty</p>
+    </header>
+
+    <main>
+        <form id="formBusqueda">
+            <input type="text" id="inputNombre" placeholder="Nombre del personaje">
+            <select id="selectEstado">
+                <option value="">Todos</option>
+                <option value="alive">Vivo</option>
+                <option value="dead">Muerto</option>
+                <option value="unknown">Desconocido</option>
+            </select>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <p id="mensaje"></p>
+
+        <section id="resultados"></section>
+
+        <nav id="paginacion">
+            <button id="btnAnterior">Anterior</button>
+            <span id="infoPagina"></span>
+            <button id="btnSiguiente">Siguiente</button>
+        </nav>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
