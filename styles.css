@@ -41,3 +41,36 @@ header {
 .estado.alive   { color: #2e7d32; font-weight: bold; }
 .estado.dead    { color: #c62828; font-weight: bold; }
 .estado.unknown { color: #757575; font-weight: bold; }
+
+#mensaje {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#mensaje:empty {
+  display: none;
+}
+
+#mensaje.cargando { background: #e3f2fd; color: #1565c0; }
+#mensaje.vacio    { background: #fff8e1; color: #8d6e00; }
+#mensaje.error    { background: #ffebee; color: #c62828; }
+
+#paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+#paginacion[hidden] {
+  display: none;
+}
+
+#paginacion button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
